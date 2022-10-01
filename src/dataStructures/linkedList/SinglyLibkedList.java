@@ -39,5 +39,60 @@ public class SinglyLibkedList {
 
     } // end createSinglyLinkedList
 
+    // Insert Method SingleLinkedList
+    public void insertLinkedList(int nodeValue, int location){
+        // creating a node value
+        Node node = new Node();
+        // getting the node value from the prameter
+        node.value = nodeValue;
+        // check if the linklist is created or not
+        if (head == null){
+            // if it's not created , create a sinle list with the parameter value
+            createSinglyLinkedList(nodeValue);
+            return;
+            //but if it's create -> set the new created to head , and the head to the next node
+        } else if (location == 0){
+            // the new node is referencing the head
+            head.next = head;
+            // the head will refrences to the node
+            head = node;
+            //check if the location parameter is greater than the size , then insert it at the end of the list
+        }else if (location >= size){
+            // the last node refrences to null , if the the above node is the last node,
+            //then next refrence of the node has to be null
+            node.next = null;
+            // in tail we have the last node , and accesing tail.next = accessing last nodes refrence
+            // setting last nodes refrence to the new node
+            tail.next = node;
+            // tail refrencing the node we created
+            tail = node;
+
+        } else{
+            // inserting at any given location
+            // start looping from the head
+            Node tempNode = head;
+            //looping variable
+            int index = 0;
+            // loop until we reach specified node
+            while (index < location -1){
+                tempNode = tempNode.next;
+                index++;
+
+            } // end while
+        // when we found the location we looking , then insert the node there
+            Node nextNode = tempNode.next;
+            tempNode.next = node;
+            node.next = nextNode;
+
+        }// end if
+        // increase the size
+        size++;
+
+
+
+    } // end insertLinkedList
+
+
+
 
 }

@@ -11,6 +11,9 @@ public class LinkedList {
         //printing out the singlyLibkedList i created
         System.out.println(singlyLibkedList.head.value);
 
+        singlyLibkedList.insertLinkedList(6,0);
+        System.out.println(singlyLibkedList.head.value);
+
 
 
     }
