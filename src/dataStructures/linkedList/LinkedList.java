@@ -7,7 +7,8 @@ public class LinkedList {
         //Create instant of singlelinkedlist class
         SinglyLibkedList singlyLibkedList = new SinglyLibkedList();
         // using createsll method to create a link list
-        singlyLibkedList.createSinglyLibkedList(5);
+        singlyLibkedList.createSinglyLinkedList(5);
+        //printing out the singlyLibkedList i created
         System.out.println(singlyLibkedList.head.value);
 
 

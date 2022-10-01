@@ -17,14 +17,15 @@ public class SinglyLibkedList {
     // The size of a the nodes we have in singleList
     public int size;
 
-    public Node createSinglyLibkedList (int nodeValue){
+// a method that creates LinkedList
+    public Node createSinglyLinkedList (int nodeValue){
         //initialize head with type of node
         head = new Node();
 
         // creating instant av node
         Node node = new Node();
 
-       // bcz we have 1 node , setting next to null
+       // bcz we have 1 node , setting node.next to null
         node.next = null;
     // node values that comes from the prameter
         node.value = nodeValue;
@@ -36,7 +37,7 @@ public class SinglyLibkedList {
 
 
 
-    } // end createSinglyLibkedList
+    } // end createSinglyLinkedList
 
 
 }
