@@ -63,6 +63,35 @@ public class QueueArray {
 
     } // end endQueue
 
+    public int endQueue (){
+        if (isEmpty()){
+            System.out.println("The Queue is empty");
+            return -1;
+        }else {
+            int result = arr[beginninfOfQueue];
+            beginninfOfQueue++;
+            if (beginninfOfQueue > topOfQueue){
+                beginninfOfQueue = topOfQueue -1;
+
+            }
+            return result;
+
+        }//end if
+
+
+    } // end endQueue
+
+    // peek looking
+    public int peek (){
+        if (!isEmpty()){
+            return arr[beginninfOfQueue];
+        }else {
+            System.out.println("The Queue is empty");
+            return -1;
+        } //end if
+
+    } //end peek
+
 
 
 
