@@ -37,5 +37,20 @@ public class GroceryList {
         groceryList.remove(position);
     }// end removeGroceryItem
 
+    // Find Items
+
+    public String findItem (String searchItem){
+       // boolean exists = groceryList.contains(seachItem);
+        int position = groceryList.indexOf(searchItem);
+        if (position >= 0 ){
+            return groceryList.get(position);
+        } // end if
+
+        return null;
+
+    } //END findItem
+
+
+
 
 }
