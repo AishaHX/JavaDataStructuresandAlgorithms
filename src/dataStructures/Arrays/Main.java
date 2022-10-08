@@ -22,6 +22,7 @@ public class Main {
         } // end last for */
 
 
+        // find the average of the numbers
         // creating a array with 5 values, getting from this value from getInteger method
         int [] myIntegersArray= getIntegers (5);
         for (int i = 0; i < myIntegersArray.length; i++) {
