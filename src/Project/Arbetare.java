@@ -8,13 +8,15 @@ public class Arbetare  extends Arbetsgivare{
     private String name;
     private String efternamn;
     private int id;
+    private String arbetstyp;
+
     //private String arbetstyp;
     // Composition -> creating array list of type arbetsMyrors classen
     //public TyperAvArbetare typerAvArbetares;
     //public  ArrayList<TyperAvArbetare> typerAvArbetares;
     //public TyperAvArbetare typerAvArbetare;
     //public String desscription;
-    String typerAvArbetare;
+    //String typerAvArbetare;
 
     /*public ArrayList<TyperAvArbetare> getTyperAvArbetares() {
         return typerAvArbetares;
@@ -25,13 +27,15 @@ public class Arbetare  extends Arbetsgivare{
 
     //CON
 
-
-    public Arbetare(String name, String efternamn, int id, String desscription) {
+    public Arbetare(String name, String efternamn, int id, String arbetstyp) {
         this.name = name;
         this.efternamn = efternamn;
         this.id = id;
-       /// this.desscription = getDescription();
+        this.arbetstyp = arbetstyp;
     }
+
+
+
 
 
 
@@ -49,6 +53,13 @@ public class Arbetare  extends Arbetsgivare{
     public String getEfternamn() {
         return efternamn;
     }
+
+    // get Full namne
+
+    public String getFullnamn (){
+
+        return getName() + " " + getEfternamn();
+    } //
 
     // get id
    public int getId(){
@@ -85,9 +96,13 @@ public class Arbetare  extends Arbetsgivare{
         return "is Arbetare ";
     }
 
+    public String getArbetstyp() {
+        return arbetstyp;
+    }
+
     // gett Arbetare information
     public String getArbetare (){
-        return name =  "Arbetaren's Full namn är :  " + getName() + getEfternamn() + "\n"+ " ID till användaren är : " + getId()+ "\n" + " Arbetaren är typen of : "+ getDescription() + isArbetareHasSkor();
+        return name =  "Arbetaren's Full namn är :  " +getFullnamn() + "\n"+ " ID till användaren är : " + getId()+ "\n" + " Arbetaren är typen of : "+ getArbetstyp() + " ,"+ isArbetareHasSkor();
 
     }
 

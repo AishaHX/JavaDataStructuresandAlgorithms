@@ -20,6 +20,11 @@ public class OvrigaArbetare extends Arbetare{
     }
 
     @Override
+    public String getFullnamn() {
+        return super.getFullnamn();
+    }
+
+    @Override
     public int getId() {
         return super.getId();
     }

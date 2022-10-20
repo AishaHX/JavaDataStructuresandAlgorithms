@@ -16,7 +16,7 @@ public class Arbetsgivare{
         return id;
     }
 
-    public List<String> manageLista () {
+    public List<String> manageLista() {
         return new ArrayList<>();
 
     }
