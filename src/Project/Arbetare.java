@@ -27,11 +27,11 @@ public class Arbetare  extends Arbetsgivare{
 
     //CON
 
-    public Arbetare(String name, String efternamn, int id, String arbetstyp) {
+    public Arbetare(String name, String efternamn, int id/*String arbetstyp*/) {
         this.name = name;
         this.efternamn = efternamn;
         this.id = id;
-        this.arbetstyp = arbetstyp;
+        //this.arbetstyp = arbetstyp;
     }
 
 
@@ -69,11 +69,11 @@ public class Arbetare  extends Arbetsgivare{
 
     // Metod HasSkyddskor
     public static boolean isArbetareHasSkor (){
-        String villDuharSkyddSkor;
-        System.out.println("Vill du skkyd Skor , svara jaa eller nej Tack!");
+        int villDuharSkyddSkor;
+        System.out.println("Vill du skkyd Skor , svara 1 för ja eller  0 för nej Tack!");
         Scanner scanner = new Scanner(System.in);
-        villDuharSkyddSkor = scanner.nextLine();
-        if (villDuharSkyddSkor == "jaa" ){
+        villDuharSkyddSkor = scanner.nextInt();
+        if (villDuharSkyddSkor == 1 ){
             System.out.println("Tack ! du har skor nu");
             return true;
         } else {
@@ -102,7 +102,7 @@ public class Arbetare  extends Arbetsgivare{
 
     // gett Arbetare information
     public String getArbetare (){
-        return name =  "Arbetaren's Full namn är :  " +getFullnamn() + "\n"+ " ID till användaren är : " + getId()+ "\n" + " Arbetaren är typen of : "+ getArbetstyp() + " ,"+ isArbetareHasSkor();
+        return name =  "Arbetaren's Full namn är :  " +getFullnamn() + "\n"+ " ID till användaren är : " + getId()+ "\n" + " Arbetaren är typen of : "+ getDescription() + " ,"+ isArbetareHasSkor();
 
     }
 

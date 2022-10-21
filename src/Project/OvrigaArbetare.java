@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class OvrigaArbetare extends Arbetare{
 
 
-    public OvrigaArbetare(String name, String efternamn, int id, String desscription) {
-        super(name, efternamn, id, desscription);
+    public OvrigaArbetare(String name, String efternamn, int id /*String desscription*/) {
+        super(name, efternamn, id /* desscription*/);
     }
 
     @Override

@@ -7,6 +7,9 @@ public class QueueLista {
     Queue<Arbetare> queueArbetare = new LinkedList<Arbetare>();
 
 
+
+
+
     public static void main(String[] args) {
 
 
@@ -16,10 +19,49 @@ public class QueueLista {
 
         Queue<Arbetare> queueArbetare = new LinkedList<Arbetare>();
         // Adding elements into the list
-       queueArbetare.add(new Arbetare("Aisha" ,"Hassan" , 99, "Myror"));
-        queueArbetare.add(new Arbetare("Laza" ,"Gabriout" , 90, "Ovriga"));
+       /*queueArbetare.add(new Arbetare("Aisha" ,"Hassan" , 99, "Myror"));
+
         queueArbetare.add(new Arbetare("Oscar" ,"Wikström" , 90, "Bee"));
-        queueArbetare.add(new Arbetare("Alexander" ,"Nordström" , 80, "Bee"));
+
+        queueArbetare.add(new Arbetare("Alexander" ,"Nordström" , 80, "Bee"));*/
+        queueArbetare.add(new OvrigaArbetare("jj" , "gvgd" , 89));
+
+        queueArbetare.add(new ArbetsMyror("pelle", "svensson" ,88));
+
+
+
+        // Search
+
+        /*Arbetare value;
+        public Arbetare Searach(queueArbetare,value){
+
+
+            for (int i = 0; i < queueArbetare.size(); i++) {
+
+            } /// end search
+
+            return value.getArbetare();
+
+
+        } // end search */
+
+
+
+        /*public boolean search(queueArbetare.equals(), int x)
+        {
+            // Base case
+            if (head == null)
+                return false;
+
+            // If key is present in current node,
+            // return true
+            if (head.data == x)
+                return true;
+
+            // Recur for remaining list
+            return search(head.next, x);
+        }*/
+
 
         // Looping through elements in the list
         Iterator iterator = queueArbetare.iterator();
@@ -38,7 +80,19 @@ public class QueueLista {
         System.out.println("There are " + queueArbetare.size() + " " + "Elements on the list");
 
 
+
+
+
+
     } // end main
+
+
+
+
+
+
+
+
 
 
 

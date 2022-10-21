@@ -22,14 +22,14 @@ TyperAvArbetare typerAvArbetare = new TyperAvArbetare();
 
         TyperAvArbetare typerAvArbetare1 = new TyperAvArbetare();
 
-        String TYP = typerAvArbetare1.getDescription();
+      /*  String TYP = typerAvArbetare1.getDescription();
         Arbetare arbetare1 = new Arbetare("Aisha " , "Hassan",44 , "Arbetare");
         ArbetsMyror arbetare44 = new ArbetsMyror("ola" , "hans" , 88 ,"Myror");
         System.out.println(arbetare1.getArbetare());
         System.out.println(arbetare44.getArbetare());
 
 
-
+*/
         /*System.out.println(arbetare2.getArbetare());
         System.out.println(arbetsMyror1.getArbetare());
         System.out.println(arbetare1.getArbetare());*/

@@ -13,8 +13,8 @@ public class ArbetsMyror extends Arbetare{
         return super.getFullnamn();
     }
 
-    public ArbetsMyror(String name, String efternamn, int id, String arbetstyp) {
-        super(name, efternamn, id, arbetstyp);
+    public ArbetsMyror(String name, String efternamn, int id /*String arbetstyp*/) {
+        super(name, efternamn, id /*arbetstyp*/);
     }
 
     @Override
