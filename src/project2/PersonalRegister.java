@@ -29,12 +29,12 @@ public class PersonalRegister {
          // Binary Searching The ArrayList to find  specific Arbetare
         ArbetareAbs SearchArbetare = new ArbetsMyror("Rikard", "Land", 40);
         int index = Collections.binarySearch(myList, SearchArbetare, new SearchArbetare());
-        System.out.println("Index of the searched key: " + index);
+        System.out.println( SearchArbetare.getName() + " Finns i index :" + index);
 
 
 
         // Queue Lista
-     Queue<ArbetareAbs> queueArbetare = new LinkedList<ArbetareAbs>();
+    /* Queue<ArbetareAbs> queueArbetare = new LinkedList<ArbetareAbs>();
         queueArbetare.add(new OvrigaArbetare("Aisha", "Hassan", 209));
         queueArbetare.add(new OvrigaArbetare("Laza", "Gabriout", 260));
         queueArbetare.add(new OvrigaArbetare("Oscar", "Wikström", 230));
